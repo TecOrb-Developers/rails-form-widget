@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+  protect_from_forgery except: [ :new, :create ]
   before_action :set_book, only: %i[ show edit update destroy ]
 
   # GET /books or /books.json
@@ -13,6 +14,11 @@ class BooksController < ApplicationController
   # GET /books/new
   def new
     @book = Book.new
+
+    respond_to do |format|
+      format.html
+      format.js { render "/shared/widgets/books/new_book" }
+    end
   end
 
   # GET /books/1/edit
@@ -29,7 +35,7 @@ class BooksController < ApplicationController
         format.json { render :show, status: :created, location: @book }
       else
         format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @book.errors, status: :unprocessable_entity }
+        format.json { render json: {code: 422, errors: @book.errors.full_messages.join(', ')}, status: :unprocessable_entity }
       end
     end
   end

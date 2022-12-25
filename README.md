@@ -12,4 +12,6 @@ use below script:
 <script type="text/javascript" src="http://localhost:3000/counters/new.js"></script>
 ```
 
-
+```
+<script type="text/javascript" src="http://localhost:3000/books/new.js"></script> 
+```
