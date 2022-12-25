@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## How to use js Widget on other sites
 
-Things you may want to cover:
+use below script:
 
-* Ruby version
+```
+<script type="text/javascript" src="http://localhost:3000/counters/1.js"></script> 
+```
 
-* System dependencies
+```
+<script type="text/javascript" src="http://localhost:3000/counters/new.js"></script>
+```
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

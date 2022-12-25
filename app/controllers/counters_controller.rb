@@ -1,5 +1,5 @@
 class CountersController < ApplicationController
-  protect_from_forgery except: [:show]
+  protect_from_forgery except: [:show, :new, :create]
   before_action :set_counter, only: %i[ show edit update destroy ]
 
   # GET /counters or /counters.json
