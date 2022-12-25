@@ -1,6 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @counter %>
+<hr>
+<%= render(:partial => 'counterwidget', :locals => {:counter => @counter}).html_safe %>
 
 <div>
   <%= link_to "Edit this counter", edit_counter_path(@counter) %> |
