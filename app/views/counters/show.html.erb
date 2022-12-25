@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @counter %>
+
+<div>
+  <%= link_to "Edit this counter", edit_counter_path(@counter) %> |
+  <%= link_to "Back to counters", counters_path %>
+
+  <%= button_to "Destroy this counter", @counter, method: :delete %>
+</div>
