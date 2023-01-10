@@ -159,3 +159,8 @@ document.write("<%= j(render(:partial => 'counterwidget', :locals => {:counter =
 ```
 <script type=”text/javascript” src=”http://localhost:3000/counters/1.js"></script>
 ```
+
+```
+<script type="text/javascript" src="http://localhost:3000/books/new.js"></script> 
+```
+
