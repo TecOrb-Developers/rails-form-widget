@@ -145,7 +145,7 @@ var x = setInterval(function() {234
 
 ### Step 6: Next, we need a file that will render our counter via JavaScript. 
 
-Create a new file in app/views/counters/show.js.erb and paste the following code:
+Create a new file in _app/views/counters/show.js.erb_ and paste the following code:
 
 ```
 document.write("<%= j(render(:partial => 'counterwidget', :locals => {:counter => @counter}).html_safe) %>");
